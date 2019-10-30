@@ -32,6 +32,30 @@ Note: Both the training and test datasets are different from the [Kaggle dataset
 
 Multi-class log loss. Our final submission, Submission.py in this repo, achieved a log loss of 2.21.
 
+**Experiments for Feature Selection**
+
+We chose X, Y, Hour
+
+**Final Code**
+
+The training and test .csv files were given as two arguments in the command line.
+
+We obtained the date in the correct format using to_datetime() from pandas.
+
+We imputed missing values of X and Y by filling in the mean. 
+
+We used the StandardScaler() to convert our numeric variables, X, Y, and Hour, to zero-mean and unit variance.
+
+In order to use the categorical variables, we one-hot encoded DayOfWeek, PdDistrict, and Resolution with get_dummies() from pandas.
+
+The numerical variables and one-hot encodings were then concatenated.
+
+Similarly, for the test data, the date was converted to the correct format, missing values for X, Y, and Hour were filled in with the mean values, and scaled with the StandardScaler() fitted to the training data. After one-hot encoding, both the numeric and categorical variables were concatenated.
+
+We chose the LogisticRegression() classifier from sklearn and used its predict_proba() function to save the predictions as probabilities.
+
+At the end, Submission.py saves the results in a .csv file.
+
 **Team Members**
 
 Sujith S Pai\
