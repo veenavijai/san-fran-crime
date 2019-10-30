@@ -33,7 +33,13 @@ Multi-class log loss, implemented by [sklearn's function](https://scikit-learn.o
 
 **Experiments for Feature Selection**
 
-We chose X, Y, Hour
+We checked correlation between the different features with a heatmap to see which features were positively correlated, negatively correlated, and had zero correlation.
+
+We checked for skewness between the features to see if we had large regions with no features. This could have been potentially fixed by some log-correction, but was not necessary for this particular dataset.
+
+We experimented with 3 classifiers, LogisticRegression(), DecisionTreeClassifier(), and RandomForestClassifer(), and tried out around 8 combinations of features. 
+
+We chose X, Y, Hour, DayOfWeek, PdDistrict, and Resolution because they consistently resulted in lower values of log loss. It makes sense that these attributes are important, because location and time are probably the first two features that would determine if a crime were to take place. 
 
 **Final Code**
 
