@@ -24,11 +24,13 @@ Address - the approximate street address of the crime incident
 X - Longitude
 Y - Latitude
 
+The training set can be downloaded [here.](https://drive.google.com/open?id=1Qs_LlKzqkAR2PMAUUQpuDslhjfs-hWtr) The validation data that we used is called Test.csv on the repo. 
+
 Note: Both the training and test datasets are different from the [Kaggle dataset.](https://www.kaggle.com/c/sf-crime)
 
 **Evaluation Metric**
 
-Multi-class log loss. Our final submission achieved a log loss of 2.21.
+Multi-class log loss. Our final submission, Submission.py in this repo, achieved a log loss of 2.21.
 
 **Team Members**
 
