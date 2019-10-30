@@ -24,8 +24,13 @@ Address - the approximate street address of the crime incident
 X - Longitude
 Y - Latitude
 
+Note: Both the training and test datasets are different from the [Kaggle dataset.](https://www.kaggle.com/c/sf-crime)
+
 **Evaluation Metric**
 
-Multi-class log loss
+Multi-class log loss. Our final submission achieved a log loss of 2.21.
 
+**Team Members**
 
+Sujith S Pai\
+Veena Vijai
