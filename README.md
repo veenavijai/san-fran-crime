@@ -16,7 +16,6 @@ This dataset contains incidents derived from SFPD Crime Incident Reporting syste
 
 Dates - timestamp of the crime incident
 Category - category of the crime incident . This is the target variable you are going to predict.
-Descript - detailed description of the crime incident (only in Train.csv)
 DayOfWeek - the day of the week
 PdDistrict - name of the Police Department District
 Resolution - how the crime incident was resolved
@@ -30,7 +29,7 @@ Note: Both the training and test datasets are different from the [Kaggle dataset
 
 **Evaluation Metric**
 
-Multi-class log loss. Our final submission, Submission.py in this repo, achieved a log loss of 2.21.
+Multi-class log loss, implemented by [sklearn's function](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html). Our final submission, Submission.py in this repo, achieved a log loss of 2.21.
 
 **Experiments for Feature Selection**
 
